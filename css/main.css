@@ -62,16 +62,16 @@ html {
 
   .card-img {
     margin: 0;
+    display: inline-block;
   }
 
   .card-img img {
-    display: inline;
-    float: left;
     margin: .75rem;
   }
 
   .card-body {
-    display: inline;
+    display: inline-block;
+    width: 78%;
   }
 
   .card-body h2 {
