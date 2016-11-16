@@ -5,13 +5,76 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  font-size: 100%;
+  line-height: 1.3;
+  font-family: sans-serif;
 }
 
 *, *::before, *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.cards {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.card {
+  margin-bottom: 1.25rem;
+  display: block;
+}
+
+.card-img {
+  margin-bottom: 1.25rem;
+}
+
+.card-img img {
+  width: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-body h2 {
+  margin-bottom: 0;
+  margin-top: .75rem;
+  font-weight: normal;
+}
+
+.card-body p {
+  margin-bottom: .75rem;
+  margin-top: .25rem;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .card {
+    display: block;
+    margin-bottom: .75rem;
+  }
+
+  .card-img {
+    margin: 0;
+  }
+
+  .card-img img {
+    display: inline;
+    float: left;
+    margin: .75rem;
+  }
+
+  .card-body {
+    display: inline;
+  }
+
+  .card-body h2 {
+    margin-top: 0;
+  }
 }
